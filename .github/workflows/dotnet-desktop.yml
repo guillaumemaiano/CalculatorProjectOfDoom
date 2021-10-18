@@ -98,7 +98,7 @@ jobs:
     #  run: ls -r .
 
     - name: List files
-      run: ls -r CalculatorProjectOfDoom
+      run: cat CalculatorProjectOfDoom\*
     
     # Execute all unit tests in the solution
     - name: Execute unit tests
