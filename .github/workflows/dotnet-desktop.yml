@@ -104,7 +104,7 @@ jobs:
     #- name: Build unit tests
     #  run:  CalculatorTesterOfDoom\bin\Debug\net472\CalculatorTesterOfDoom.dll
       
-    - name: Run a one-line script
+    - name: Display the help for the testing tool
       run:  '& "$(vswhere -property installationPath)\Common7\IDE\MSTest.exe" /help'
       
     - name: Test unit tests
