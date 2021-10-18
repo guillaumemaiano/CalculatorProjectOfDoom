@@ -97,14 +97,17 @@ jobs:
     # - name: List files
     #  run: ls -r .
 
-    - name: List files
+    - name: Display test project files
       run: ls -r CalculatorTesterOfDoom; cat CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
     
     # Execute all unit tests in the solution
-    - name: Execute unit tests
+    - name: Build unit tests
       #run: dotnet test
       #run: msbuild test $env:Test_Project_Path
       run: msbuild CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
+      
+    - name: Execute unit tests
+      run: msbuild test CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
