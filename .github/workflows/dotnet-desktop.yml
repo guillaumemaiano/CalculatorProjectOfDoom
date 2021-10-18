@@ -107,7 +107,7 @@ jobs:
       run: msbuild CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
       
     - name: Execute unit tests
-      run: msbuild test CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
+      run: msbuild test #CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
