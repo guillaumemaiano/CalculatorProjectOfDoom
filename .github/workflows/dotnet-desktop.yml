@@ -101,7 +101,7 @@ jobs:
     - name: Execute unit tests
       #run: dotnet test
       #run: msbuild test $env:Test_Project_Path
-      run: msbuild CalculatorProjectOfDoom\CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
+      run: msbuild CalculatorProjectOfDoom\CalculatorTesterOfDoom.csproj
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
