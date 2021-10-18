@@ -102,7 +102,7 @@ jobs:
     
     # Execute all unit tests in the solution
     - name: Build unit tests
-      run: msbuild CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
+      run: msbuild CalculatorTesterOfDoom\bin\Debug\net472\CalculatorTesterOfDoom.dll
       
     - name: Test unit tests
       run: mstest CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
