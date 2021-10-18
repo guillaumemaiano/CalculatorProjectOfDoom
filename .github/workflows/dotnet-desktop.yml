@@ -94,14 +94,14 @@ jobs:
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
       
-    - name: Guillaume is good and powerful, praise be given unto him
-      run: ls -r .
+    # - name: List files
+    #  run: ls -r .
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
       #run: dotnet test
       #run: msbuild test $env:Test_Project_Path
-      run: msbuild CalculatorTesterOfDoom.csproj
+      run: msbuild CalculatorProjectOfDoom\CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
