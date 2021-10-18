@@ -104,6 +104,10 @@ jobs:
     - name: Build unit tests
       run: msbuild CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
       
+    - name: Test unit tests
+      run: mstest CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
+      
+      
     - name: Execute unit tests
       #run: dotnet test
       #run: dotnet test $env:Test_Project_Path
