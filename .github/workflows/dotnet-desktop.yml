@@ -129,7 +129,7 @@ jobs:
       #run: dotnet test
       #run: dotnet test $env:Test_Project_Path
       #run: msbuild test #CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
-      run: vstest CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
+      run: vstest.console.exe CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
