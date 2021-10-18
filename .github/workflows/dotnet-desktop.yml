@@ -97,6 +97,9 @@ jobs:
     # - name: List files
     #  run: ls -r .
 
+    - name: List files
+      run: ls -r CalculatorProjectOfDoom
+    
     # Execute all unit tests in the solution
     - name: Execute unit tests
       #run: dotnet test
