@@ -107,8 +107,8 @@ jobs:
     - name: Display the help for the testing tool
       run:  '& "$(vswhere -property installationPath)\Common7\IDE\MSTest.exe" /help'
       
-    - name: Test unit tests
-      run: mstest CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
+    #- name: Test unit tests
+    #  run: mstest CalculatorTesterOfDoom\CalculatorTesterOfDoom.csproj
       
       
     - name: Execute unit tests
