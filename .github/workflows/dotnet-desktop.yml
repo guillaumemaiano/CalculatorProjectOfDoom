@@ -102,7 +102,7 @@ jobs:
     
     # Execute all unit tests in the solution
     #- name: Build unit tests
-    "  run:  CalculatorTesterOfDoom\bin\Debug\net472\CalculatorTesterOfDoom.dll
+    #  run:  CalculatorTesterOfDoom\bin\Debug\net472\CalculatorTesterOfDoom.dll
       
     - name: Run a one-line script
       run:  '& "$(vswhere -property installationPath)\Common7\IDE\MSTest.exe" /help'
