@@ -9,7 +9,7 @@
   <Identity
     Name="f0a14f6c-3293-43f4-a6de-5d1aec3382cf"
     Publisher="CN=Guillaume"
-    Version="1.0.0.0" />
+    Version="1.0.1.0" />
 
   <Properties>
     <DisplayName>CalculatorOfDoomWapProject</DisplayName>
